@@ -5,17 +5,18 @@ body{
 	font-size:11pt;
 	font-weight:300;
 	color:#666;
-	background:url("../images/fabric+plaid.png") repeat;
+	background:url("../assets/fabric_plaid.png") repeat;
 	margin:0;
 	padding:0;
 }
 
-h1{
+h1,h3,h4{
 	color:#00acef !important;
 }
 
 p{
 	font-family: 'Raleway', Verdana;
+	text-align:justify;
 }
 
 /****S**** Global Styles ****S****/
@@ -24,6 +25,7 @@ p{
 	width:960px;
 	height:auto;
 	min-height:100%;
+	background:#FFF;
 	box-shadow: rgba(0, 0, 0, 0.046875) 0px 0px 0px 4px;
 	left:50%;
 	margin-left:-480px;
@@ -96,6 +98,7 @@ p{
 	background:#ffffff;
 	padding:10px;
 	overflow:hidden;
+	margin-bottom:35px;
 	box-shadow:0 1px 2px #999;
 	-moz-box-shadow: 0 1px 2px #999;
 	-webkit-box-shadow: 0 1px 2px #999;
@@ -107,7 +110,6 @@ p{
 	min-width:940px;
 	min-height:30px;
 	background:#FFF;
-	margin-top:2px;
 	overflow:hidden;
 	bottom:0;
 	position:absolute;
@@ -165,4 +167,10 @@ p{
 
 /****E**** Home Styles ****E****/
 
+/****S**** Create Article ****S****/
 
+.create-article form{
+	margin:20px 0 0 0;
+}
+
+/****E**** Create Article ****E****/

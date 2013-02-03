@@ -1,0 +1,11 @@
+<%= AdminNavigation("createarticle") %>
+
+<div class="content create-article">
+	<h1>Create a New Article</h1>
+	<%=
+	form_tag do 
+		select_tag(:section, options_for_select([["News", "News"], ["Racing Team", "Racing Team"]]))
+	 	text_field_tag(:title,nil,:placeholder => "Title")
+	end 
+	%>
+</div>
