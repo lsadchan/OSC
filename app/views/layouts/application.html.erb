@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Osc</title>
+  <title>Oval Ski Club</title>
+  <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+  <link href="../../assets/stylesheets/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="../../assets/stylesheets/global_styles.css" rel="stylesheet" type="text/css">
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+	<div class="wrapper">
+		<div class="header">
+			<form class="input-append search-bar">
+				<input class="span3 search-query" type="text" name="search" placeholder="Search" />
+				<button id="search-btn" class="btn btn-link" name="search-btn" type="submit"><i class="icon-search"></i></button>
+			</form>
+			<h1>Oval Ski Club</h1>
+		</div>
+		<%= yield %>
+		<div class="footer">
+			<a href="/welcome/aboutus">About Us</a><a>|</a><a href="#">Contact Us</a>
+			<p>© OSC 2013</p>
+		</div>
+	</div>
 </body>
 </html>
