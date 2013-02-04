@@ -1,20 +1,11 @@
-<p id="notice"><%= notice %></p>
+<%= AdminNavigation("createarticle") %>
 
-<p>
-  <b>Title:</b>
-  <%= @article.title %>
-</p>
-
-<p>
-  <b>Body:</b>
-  <%= @article.body %>
-</p>
-
-<p>
-  <b>Section:</b>
-  <%= @article.section %>
-</p>
-
-
-<%= link_to 'Edit', edit_article_path(@article) %> |
-<%= link_to 'Back', articles_path %>
+<div class="content create-article">
+	<h1>Create a New Article</h1>
+	<%= form_tag(:method => "post") do %>
+	<%= select_tag(:section, options_for_select([["News", "News"], ["Racing Team", "Racing Team"]])) %>
+	<%= text_field_tag(:title,nil,:placeholder => "Title") %>
+	<%= text_area_tag(:body,nil,:placeholder => "Content") %>
+	<%= submit_tag("Create",:class => "btn btn-primary") %>
+	<% end %>
+</div>
