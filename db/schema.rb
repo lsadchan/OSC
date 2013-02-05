@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130205152003) do
+ActiveRecord::Schema.define(:version => 20130205195315) do
 
   create_table "clubsessions", :force => true do |t|
     t.text     "audience"
@@ -28,6 +28,22 @@ ActiveRecord::Schema.define(:version => 20130205152003) do
     t.text     "endtime"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+  end
+
+  create_table "users", :force => true do |t|
+    t.text     "firstname"
+    t.text     "lastname"
+    t.text     "street"
+    t.text     "city"
+    t.text     "postcode"
+    t.text     "county"
+    t.text     "mobile"
+    t.text     "telephone"
+    t.text     "email"
+    t.text     "username"
+    t.text     "password"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end
