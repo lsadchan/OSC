@@ -1,12 +1,8 @@
 Osc::Application.routes.draw do
-  get "admin/index"
-
   resources :articles
-
-
   resources :users
 
-  get "welcome/home"
+  get "welcome/index"
   get "welcome/aboutus"
   get "welcome/contactus"
 
