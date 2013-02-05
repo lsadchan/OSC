@@ -20,9 +20,9 @@ class ApplicationController < ActionController::Base
     
     @nav = '<div class="navigation">
               <ul class="nav nav-pills">
-              <li class="'+home+'" ><a href="/welcome/home">Home</a></li>
+              <li class="'+home+'" ><a href="/welcome/index">Home</a></li>
               <li class="'+learntoski+'" ><a href="#">Learn To Ski</a></li>
-              <li class="'+clubsessions+'" ><a href="#">Club Sessions</a></li>
+              <li class="'+clubsessions+'" ><a href="/sessions">Club Sessions</a></li>
               <li class="'+racingteam+'" ><a href="#">Racing Team</a></li>
               <li class="'+aboutus+'" ><a href="/welcome/aboutus">About Us</a></li>
               </ul>

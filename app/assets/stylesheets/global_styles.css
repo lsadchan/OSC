@@ -135,9 +135,6 @@ p{
 	line-height:3;
 }
 
-/****E**** Global Styles ****E****/
-
-/****S**** Home Styles ****S****/
 
 #new-articles{
 	margin-top:2px;
@@ -165,12 +162,4 @@ p{
 	max-width:300px;
 }
 
-/****E**** Home Styles ****E****/
-
-/****S**** Create Article ****S****/
-
-.create-article form{
-	margin:20px 0 0 0;
-}
-
-/****E**** Create Article ****E****/
+/****E**** Global Styles ****E****/
