@@ -1,6 +1,6 @@
 class WelcomeController < ApplicationController
   def index
-    @sessions = Session.all
+    @sessions = Session.all(:order => "starttime ASC")
 
     respond_to do |format|
       format.html # index.html.erb

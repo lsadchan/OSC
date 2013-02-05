@@ -103,6 +103,10 @@ p{
 	text-align:center;
 }
 
+.navigation .login-pill{
+	margin-left:315px;
+}
+
 .navigation ul li a{
 	color:#666;
 }
