@@ -14,6 +14,22 @@ h1,h3,h4{
 	color:#00acef !important;
 }
 
+.blue-pill{
+	color:#FFF !important;
+	background:rgb(0,172,239);
+	border:1px solid rgb(0,172,239);
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	padding:5px 10px 5px 10px;
+	text-align:center;
+}
+
+.blue-pill:hover, .blue-pill:active{
+	background:rgb(0,172,239);
+	color:#FFF;
+}
+
 p{
 	font-family: 'Raleway', Verdana;
 	text-align:justify;

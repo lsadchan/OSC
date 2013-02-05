@@ -40,6 +40,21 @@
 		</div>
 		<div class="span4">
 			<h5>Club Sessions</h5>
+			<table class="table table-condensed">
+			  <tr>
+			    <th>Session</th>
+			    <th>Start Time</th>
+			    <th>End Time</th>
+			  </tr>
+			
+			<% @sessions.each do |session| %>
+			  <tr>
+			    <td><%= session.sessioninfo %></td>
+			    <td><%= session.starttime %></td>
+			    <td><%= session.endtime %></td>
+			  </tr>
+			<% end %>
+			</table>
 		</div>
 	</div>
 </div>
