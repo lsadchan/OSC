@@ -5,7 +5,8 @@ body{
 	font-size:11pt;
 	font-weight:300;
 	color:#666;
-	background:url("../assets/fabric_plaid.png") repeat;
+	background:url("../assets/snow-mountain-bottom.png") no-repeat, url("../assets/gradient.jpg") repeat-x;
+	background-position: center top, left top;
 	margin:0;
 	padding:0;
 }
@@ -189,6 +190,14 @@ p{
 	margin: 0 auto;
 	margin-top: 20px;
 	margin-bottom: 20px;
+}
+
+#team-ul{
+	text-align:center;
+}
+
+#team-ul li{
+	background:rgba(255,255,255,0.8);
 }
 
 
