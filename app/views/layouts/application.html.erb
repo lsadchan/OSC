@@ -3,10 +3,14 @@
 <head>
   <title>Oval Ski Club</title>
   <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-  <link href="../../assets/stylesheets/bootstrap.css" rel="stylesheet" type="text/css">
-  <link href="../../assets/stylesheets/global_styles.css" rel="stylesheet" type="text/css">
+  <%= stylesheet_link_tag    "bootstrap", :media => "all" %>
   <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag    "global_styles", :media => "all" %>
   <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag "jquery-1.9.0" %>
+  <%= javascript_include_tag "jquery-1.7.1.min" %>
+  <%= javascript_include_tag "bootstrap" %>
+  <%= javascript_include_tag "bootstrap-transitions" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
