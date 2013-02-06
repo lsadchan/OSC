@@ -16,9 +16,11 @@
 	<% @racingteams.each do |racingteam| %>
 	<h3><%= racingteam.title %></h3>
 	<p><%= racingteam.body.html_safe %></p>
+	<hr/>
 	<%= link_to 'Show', racingteam %>
 	<%= link_to 'Edit', edit_racingteam_path(racingteam) %>
 	<%= link_to 'Destroy', racingteam, method: :delete, data: { confirm: 'Are you sure?' } %>
+	<hr/>
 	<% end %>
 
 	<br/>

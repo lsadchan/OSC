@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .new_racingteam, .edit_racingteam{
-  width:600px;
+  width:900px;
   padding:10px;
   border:1px solid #999;
   border-radius:5px;
@@ -14,7 +14,7 @@
 }
 
 .new_racingteam textarea, .edit_racingteam textarea{
-  width:585px;
+  width:885px;
   height:300px;
   resize:vertical;
 }

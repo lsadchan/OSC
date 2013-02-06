@@ -44,7 +44,7 @@ class RacingteamsController < ApplicationController
 
     respond_to do |format|
       if @racingteam.save
-        format.html { redirect_to @racingteam, notice: 'Racingteam was successfully created.' }
+        format.html { redirect_to @racingteam, notice: 'Event was successfully created.' }
         format.json { render json: @racingteam, status: :created, location: @racingteam }
       else
         format.html { render action: "new" }
@@ -60,7 +60,7 @@ class RacingteamsController < ApplicationController
 
     respond_to do |format|
       if @racingteam.update_attributes(params[:racingteam])
-        format.html { redirect_to @racingteam, notice: 'Racingteam was successfully updated.' }
+        format.html { redirect_to @racingteam, notice: 'Event was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

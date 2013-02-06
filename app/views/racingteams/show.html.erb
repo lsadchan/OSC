@@ -1,17 +1,20 @@
 <%= Navigation("racingteam") %>
 
 <div class="content">
-<p id="notice"><%= notice %></p>
+	<% if notice!=nil %>
+	<div class="alert alert-success">
+		<%= notice %>
+	</div>
+	<% end %>
+	
+	<h4> <%= @racingteam.title %> </h4>
 
-<h4>
-  <%= @racingteam.title %>
-</h4>
-
-<p>
-  <%= @racingteam.body.html_safe %>
-</p>
-
-<br/>
-<%= link_to 'Edit', edit_racingteam_path(@racingteam), :class  => "blue-pill" %>
-<%= link_to 'Back', racingteams_path, :class  => "blue-pill" %>
+	<p>
+		<%= @racingteam.body.html_safe %>
+	</p>
+	<br/>
+	<%= link_to 'Edit', edit_racingteam_path(@racingteam), :class  => "blue-pill" %>
+	<%= link_to 'Back', racingteams_path, :class  => "blue-pill" %>
 </div>
+
+<script type="text/javascript">bkLib.onDomLoaded(nicEditors.allTextAreas);</script>
