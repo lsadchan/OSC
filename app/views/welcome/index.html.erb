@@ -21,22 +21,13 @@
 <div class="content">
 	<div class="row-fluid">
 		<div class="span8">
-			<h5>News</h5>
-			<h4>2013 Ski Holiday in St.Christoph / St.Anton, Austria</h4>
-			<p>
-				This years' club holiday will be in the beautiful resort of St.Cristoph. The dates are Saturday 23rd March to 30th March 2013, which is the first week of Easter break. 
-			</p>
-			<p>Prices are as follows:</p>
-			<p>Children under 12 - £490</p>
-			<p>Adults &amp; aged 12+ - £590</p>
-			<p>
-				Price Includes: Half board at 4* chalet-hotel, Free wine with the evening meal, Ski hosting, Return flights from Manchester, Transfers, all taxes &amp; supplements. The holiday is open to all club members, however under 18s should be accompanied by an adult member who will be responsible for them at all times. 
-			</p>
-			<hr/>
-			<h4>Club Closed for the Summer</h4>
-			<p>
-				The 2011/2012 season has now finished. We will be busy over the summer months maintaining the slope so we are ready to open in September for next season. Check the diary for when we will be open and when we start new beginner lessons. See you then!
-			</p>
+			<% @news.each do |news| %>
+			    <h4><%= news.title %></h4>
+			    <p><%= news.body.html_safe %></p>
+			    <hr/>
+			<% end %>
+			<br/>
+			<%= link_to 'Manage Announcements',{:controller => :news, :action => :index},:class => "blue-pill" %>
 		</div>
 		<div class="span4">
 			<table class="table table-condensed">

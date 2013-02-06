@@ -1,11 +1,7 @@
 class WelcomeController < ApplicationController
   def index
+    @news = News.all
     @sessions = Session.all(:order => "starttime ASC")
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @sessions }
-    end
   end
   
   def learntoski

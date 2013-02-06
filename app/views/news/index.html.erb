@@ -1,25 +1,18 @@
-<h1>Listing news</h1>
+<%= Navigation() %>
 
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Body</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @news.each do |news| %>
-  <tr>
-    <td><%= news.title %></td>
-    <td><%= news.body %></td>
-    <td><%= link_to 'Show', news %></td>
-    <td><%= link_to 'Edit', edit_news_path(news) %></td>
-    <td><%= link_to 'Destroy', news, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New News', new_news_path %>
+<div class="content">
+	<h1>Manage Anouncements</h1>
+	<br/>
+	<% @news.each do |news| %>
+	<h4><%= news.title %></h4>
+	<p>
+		<%= news.body.html_safe %>
+	</p>
+	<%= link_to 'Show', news %>
+	<%= link_to 'Edit', edit_news_path(news) %>
+	<%= link_to 'Destroy', news, method: :delete, data: { confirm: 'Are you sure?' } %>
+	<hr/>
+	<% end %>
+	<br />
+	<%= link_to 'Add New Announcement', new_news_path, :class => "blue-pill" %>
+</div>
