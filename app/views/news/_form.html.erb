@@ -20,6 +20,8 @@
     <%= f.text_area :body %>
   </div>
   <div class="actions">
-    <%= f.submit(:class  => "blue-pill") %>
+    <%= f.submit(:value  => "Save Event",:class  => "blue-pill") %>
   </div>
 <% end %>
+
+<script type="text/javascript">bkLib.onDomLoaded(nicEditors.allTextAreas);</script>

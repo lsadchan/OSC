@@ -16,7 +16,7 @@ h1,h3,h4{
 
 .blue-pill{
 	color:#FFF !important;
-	background:rgb(0,172,239);
+	background:rgb(0,172,239) !important;
 	border:1px solid rgb(0,172,239);
 	border-radius:5px;
 	-moz-border-radius:5px;
@@ -26,8 +26,8 @@ h1,h3,h4{
 }
 
 .blue-pill:hover, .blue-pill:active{
-	background:rgb(0,172,239);
-	color:#FFF;
+	background:rgb(0,172,239) !important;
+	color:#FFF !important;
 }
 
 p{
@@ -181,5 +181,15 @@ p{
 .row-fluid .span4{
 	max-width:300px;
 }
+
+
+.para-wrap {
+	width: 900px;
+	padding: 10px;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
 
 /****E**** Global Styles ****E****/

@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.new_session{
+.new_session, .edit_session{
   width:800px;
   padding:10px;
   border:1px solid #999;
@@ -23,4 +23,8 @@
   width:500px;
   height:202px;
   resize:none;
+}
+
+#session-btn{
+  margin-left:-160px;
 }

@@ -6,12 +6,10 @@
 		<%= notice %>
 	</div>
 	<% end %>
-	
 	<h4> <%= @racingteam.title %> </h4>
-
-	<p>
-		<%= @racingteam.body.html_safe %>
-	</p>
+	<div class="para-wrap">
+	<p><%= @racingteam.body.html_safe %></p>
+	</div>
 	<br/>
 	<%= link_to 'Edit', edit_racingteam_path(@racingteam), :class  => "blue-pill" %>
 	<%= link_to 'Back', racingteams_path, :class  => "blue-pill" %>

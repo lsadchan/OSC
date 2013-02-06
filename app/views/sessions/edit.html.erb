@@ -1,6 +1,10 @@
-<h1>Editing session</h1>
+<%= Navigation("clubsessions") %>
 
-<%= render 'form' %>
+<div class="content">
+	<h1>Editing session</h1>
 
-<%= link_to 'Show', @session %> |
-<%= link_to 'Back', sessions_path %>
+	<%= render 'form' %>
+
+	<%= link_to 'Show', @session, :class  => "blue-pill" %>
+	<%= link_to 'Back', sessions_path, :class  => "blue-pill" %>
+</div>

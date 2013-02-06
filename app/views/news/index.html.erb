@@ -8,6 +8,7 @@
 	<p>
 		<%= news.body.html_safe %>
 	</p>
+	<hr/>
 	<%= link_to 'Show', news %>
 	<%= link_to 'Edit', edit_news_path(news) %>
 	<%= link_to 'Destroy', news, method: :delete, data: { confirm: 'Are you sure?' } %>
