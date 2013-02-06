@@ -1,5 +1,11 @@
 Osc::Application.routes.draw do
   
+  resources :news
+
+
+  resources :racingteams
+
+
   match '/users/login', :controller => 'users', :action => 'login'
   match '/users/register', :controller  => 'users', :action  =>  'new'
   resources :users
