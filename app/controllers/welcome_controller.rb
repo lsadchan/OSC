@@ -9,6 +9,9 @@ class WelcomeController < ApplicationController
   
   def aboutus
   end
+  
+  def faqs
+  end
 
   def contactus
   end

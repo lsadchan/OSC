@@ -29,7 +29,7 @@ class ApplicationController < ActionController::Base
               <li class="'+clubsessions+'" ><a href="/sessions">Club Sessions</a></li>
               <li class="'+racingteam+'" ><a href="/racingteams">Racing Team</a></li>
               <li class="'+aboutus+'" ><a href="/welcome/aboutus">About Us</a></li>
-              <li class="login-pill '+login+'"><a href="/users/login">Login</a></li>
+              <li class="login-pill '+login+'"><a href="#">Login</a></li>
               <li class="'+register+'" ><a href="/users/register">Register</a></li>
               </ul>
             </div>'
